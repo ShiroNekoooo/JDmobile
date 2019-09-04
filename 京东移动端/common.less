@@ -1,0 +1,54 @@
+@import "./variable.less";
+
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+
+}
+body{
+    max-width: 640px;
+    min-width: 320px;
+    background-color: #f6f6f6;
+    font: 14px/1.5 -apple-system, Helvetica, sans-serif;
+}
+
+ul li,ol li{
+    list-style: none;
+}
+
+.clearFix:after,.clearFix:before{
+    content:'';
+    display:block;
+    font-size: 0px;
+    line-height: 0px;
+    clear:both;
+}
+
+a{
+    text-decoration: none;
+}
+//圆角边框
+.br(@a:50%){
+    border-radius: @a;
+}
+img{
+
+    border:0;
+}
+input textarea{
+    border: none;
+    outline:0;
+}
+em,i{
+    font-style: normal;
+}
+
+.kill-size{
+    border-top-left-radius: 16px;
+    border-top-right-radius:  16px;
+
+    margin:1.2rem .5rem .5rem .5rem;
+
+    background: #fff;
+}
